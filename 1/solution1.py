@@ -9,3 +9,4 @@ for line in Lines:
     complement = 2020 - number
     if(complement in parsed.keys()):
         print(complement * number)
+        exit()
