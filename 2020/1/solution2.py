@@ -1,5 +1,5 @@
 file1 = open('data', 'r') 
-Lines = file1.readlines() 
+Lines = file1.readlines()
 
 parsed = {}
 
