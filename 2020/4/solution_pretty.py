@@ -1,5 +1,5 @@
-def oneline_parse():
-    return [[pair.split(":") for pair in passport] for passport in [p.split(' ') for p in (open('input_short').read().split('\n\n'))]]
+def oneline_parse(filePWD):
+    return [[pair.split(":") for pair in passport] for passport in [p.split(' ') for p in (open(filePWD).read().replace('\n', ' ').split('  '))]]
 
 def short_parse(filePWD):
     passports = (open(filePWD).read().replace('\n', ' ').split('  '))
