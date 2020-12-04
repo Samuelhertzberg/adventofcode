@@ -1,3 +1,5 @@
+import re
+
 def readPair(f):
     char = f.read(1)
     if(char == "\n"): #EOL
@@ -37,8 +39,8 @@ def checkContent(s, length, allowed):
     return len(s) == length
     
 
-def solution1():
-    with open('input') as f:
+def one_star(filePWD):
+    with open(filePWD) as f:
         valid = 0
         while True:
             fields = {"byr": False,"iyr": False,"eyr": False,"hgt": False,"hcl": False,"ecl": False,"pid": False }
@@ -56,8 +58,8 @@ def solution1():
             if(pair == -2):
                 return valid
 
-def solution2():
-    with open('input') as f:
+def two_star(filePWD):
+    with open(filePWD) as f:
         valid = 0
         while True:
             fields = {
@@ -91,8 +93,6 @@ def solution2():
             if(pair == -2):
                 return valid
 
-        
-
 if __name__ == '__main__':
-    print(solution1())
-    print(solution2())
+    print(one_star('input'))
+    print(two_star('input'))
