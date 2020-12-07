@@ -1,4 +1,3 @@
-import pprint
 def parse(filePWD):
     with open(filePWD) as f:
         bags = {}
