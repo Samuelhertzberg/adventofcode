@@ -1,0 +1,10 @@
+acc -5
+nop +333
+acc +45
+jmp +3
+acc -9
+jmp +1
+acc +27
+jmp -5
+acc +34
+nop -1
